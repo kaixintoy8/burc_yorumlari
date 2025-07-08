@@ -1,3 +1,4 @@
+import 'package:burc_uygulamasi/pages/burc_listesi.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: false),
+      home: BurcListesi(),
+    );
   }
 }
